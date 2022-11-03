@@ -9,10 +9,6 @@
   box-sizing: border-box;
 }
 
-.img_wrap {
-  width: 50%;
-}
-
 .bottomNavigation {
   backdrop-filter: blur(5px);
   overflow: hidden;
@@ -20,7 +16,7 @@
 
   top: 0;
   margin-top: 0;
-  width: 40%;
+  width: 60%;
   right: 0;
   justify-content: space-around !important;
   flex-direction: row;
@@ -57,6 +53,13 @@
 
 .btn:is(:hover, :active) {
   background: #7000e0;
+}
+
+.main_wrap{
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 @media (min-width: 0) and (max-width: 600.9px) {
@@ -105,7 +108,7 @@
 
 @media (min-width: 601px) and (max-width: 1059.9px) {
   .wrap {
-    padding: 30px 50px;
+    padding: 20px;
   }
 
   .img_wrap {
@@ -113,7 +116,7 @@
   }
 
   .img_wrap img {
-    width: 10rem;
+    width: 8rem;
   }
 
   .btn {
@@ -123,6 +126,9 @@
   .bottomNavigation a,
   .bottomNavigation a span,
   .btn {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .main_wrap{
+    width: 70%;
   }
 }

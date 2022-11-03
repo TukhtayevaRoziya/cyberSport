@@ -13,7 +13,6 @@ body {
 .MuiBottomNavigation-root {
   height: 2rem;
   display: flex;
-  width: 40%;
   flex-direction: row;
 }
 

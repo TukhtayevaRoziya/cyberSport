@@ -61,7 +61,7 @@ export default class Navbar extends Component {
           <img src={icon} alt="" draggable={false} />
         </div>
 
-        <div>
+        <div className={styles.main_wrap}>
           <BottomNavigation
             value={value}
             onChange={this.handleChange}

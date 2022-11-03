@@ -20,11 +20,15 @@ span.MuiTouchRipple-root {
   display: none;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Montserrat';
   src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
+} */
+
+@font-face {
   font-family: 'Russo One';
-  src: url('./assets/fonts/RussoOne-Regular.ttf') format('ttf');
+  src: url('./assets/fonts/russo/RussoOne-Regular.ttf') format('ttf');
+
 }
 
 @media (min-width: 0) and (max-width: 600.9px) {

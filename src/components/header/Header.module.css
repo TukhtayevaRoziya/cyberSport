@@ -1,11 +1,33 @@
-.body{
+.body {
   background-image: url(../../assets/images/header_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-.wrap{
+.wrap {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
+}
+
+.title_wrap{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title,
+.title code {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 101px;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #ffffff;
+
 }

@@ -42,7 +42,7 @@ export default class Navbar extends Component {
       { id: 0, value: 'О нас', icon: <LocationCityIcon /> },
       { id: 1, value: 'Турниры', icon: <GroupWorkIcon /> },
       { id: 2, value: 'Счёты', icon: <EventNoteIcon /> },
-      { id: 3, value: 'Фото', icon: <PhotoIcon /> }
+      { id: 3, value: 'Фото', icon: <PhotoIcon /> },
     ]
 
     const dataMap = data.map((d) => (
@@ -61,14 +61,16 @@ export default class Navbar extends Component {
           <img src={icon} alt="" draggable={false} />
         </div>
 
-        <BottomNavigation
-          value={value}
-          onChange={this.handleChange}
-          className={'nav primary ' + styles.bottomNavigation}
-        >
-          {dataMap}
-        </BottomNavigation>
-        <button className={styles.btn}>Регистрация</button>
+        <div>
+          <BottomNavigation
+            value={value}
+            onChange={this.handleChange}
+            className={'nav primary ' + styles.bottomNavigation}
+          >
+            {dataMap}
+          </BottomNavigation>
+          <button className={styles.btn}>Регистрация</button>
+        </div>
       </div>
     )
   }

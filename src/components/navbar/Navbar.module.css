@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-.img_wrap{
+.img_wrap {
   width: 50%;
 }
 
@@ -25,6 +25,7 @@
   justify-content: space-around !important;
   flex-direction: row;
   min-height: 56px;
+  background-color: inherit !important;
 }
 
 .bottomNavigation a,
@@ -54,13 +55,13 @@
   margin-left: 70px;
 }
 
-.btn:is(:hover, :active){
-  background: #7000E0;
+.btn:is(:hover, :active) {
+  background: #7000e0;
 }
 
 @media (min-width: 0) and (max-width: 600.9px) {
-  .wrap{
-    padding: 30px;
+  .wrap {
+    padding: 25px 15px;
   }
   .bottomNavigation {
     overflow: hidden;
@@ -72,7 +73,7 @@
     justify-content: space-around !important;
     flex-direction: row;
     top: inherit;
-    background-color: rgba(0,0,0,.5)!important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
     border-radius: 50px;
     min-height: 70px;
     max-height: 70px;
@@ -89,5 +90,39 @@
   .bottomNavigation a span {
     max-width: 100%;
     min-width: 100%;
+  }
+
+  .img_wrap img {
+    width: 8rem;
+  }
+
+  .btn {
+    margin: 0;
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1059.9px) {
+  .wrap {
+    padding: 30px 50px;
+  }
+
+  .img_wrap {
+    width: auto;
+  }
+
+  .img_wrap img {
+    width: 10rem;
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+
+  .bottomNavigation a,
+  .bottomNavigation a span,
+  .btn {
+    font-size: 14px;
   }
 }

@@ -23,11 +23,37 @@
   font-family: 'Russo One';
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 101px;
   text-align: center;
   letter-spacing: 0.14em;
 
   color: #ffffff;
+}
 
+.title code{
+  color: #8F00FF;
+}
+
+@media screen and (max-width:600.9px) {
+  .title{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .title,
+  .title code{
+    font-size: 20px;
+    line-height: 31px;
+  }
+  .body{
+    height: 50vh;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1059.9px) {
+  .title,
+  .title code{
+    font-size: 30px;
+    line-height: 41px;
+  }
 }

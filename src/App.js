@@ -1,7 +1,7 @@
 import Header from './components/header/Header'
+import Register from './components/about/register/Register';
 
 import './App.css'
-import Register from './components/about/register/Register'
 
 function App() {
   return (

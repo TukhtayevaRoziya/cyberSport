@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.MuiBottomNavigation-root {
+  height: 2rem;
+  display: flex;
+  width: 40%;
+  background-color: transparent !important;
+  flex-direction: row;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
+  font-family: "Russo One";
+  src: url("./assets/fonts/RussoOne-Regular.ttf") format("ttf");
+ }

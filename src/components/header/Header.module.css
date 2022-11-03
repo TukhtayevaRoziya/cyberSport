@@ -1,0 +1,11 @@
+.body{
+  background-image: url(../../assets/images/header_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.wrap{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}

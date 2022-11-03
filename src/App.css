@@ -1,13 +1,6 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-body {
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
 }
 
 .MuiBottomNavigation-root {
@@ -32,8 +25,7 @@ span.MuiTouchRipple-root {
 }
 
 @media (min-width: 0) and (max-width: 600.9px) {
-  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
-    svg.MuiSvgIcon-root {
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active svg.MuiSvgIcon-root {
     border: 2px solid #8f00ff;
   }
 
@@ -47,9 +39,18 @@ span.MuiTouchRipple-root {
     width: 50px;
   }
 
-  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
-    svg.MuiSvgIcon-root
-    path {
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active svg.MuiSvgIcon-root path {
     color: #8f00ff;
   }
+}
+
+.about__Link {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  box-sizing: border-box !important;
+  border: 2px solid red;
 }

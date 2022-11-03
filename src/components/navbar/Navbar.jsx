@@ -37,7 +37,11 @@ export default class Navbar extends Component {
   }
 
   render() {
+    console.log(window.innerHeight)
     const { value, pathMap } = this.state
+    window.addEventListener('scroll', function () {
+      console.log('scrolling')
+    })
     const data = [
       { id: 0, value: 'О нас', icon: <LocationCityIcon /> },
       { id: 1, value: 'Турниры', icon: <GroupWorkIcon /> },

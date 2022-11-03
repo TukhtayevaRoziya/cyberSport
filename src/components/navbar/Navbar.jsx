@@ -58,7 +58,7 @@ export default class Navbar extends Component {
     return (
       <div className={styles.wrap}>
         <div className={styles.img_wrap}>
-          <img src={icon} alt="" />
+          <img src={icon} alt="" draggable={false} />
         </div>
 
         <BottomNavigation

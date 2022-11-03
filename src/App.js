@@ -1,5 +1,4 @@
 import Header from './components/header/Header'
-import Register from './components/about/register/Register';
 
 import './App.css'
 

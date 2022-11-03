@@ -1,0 +1,52 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.MuiBottomNavigation-root {
+  height: 2rem;
+  display: flex;
+  width: 40%;
+  flex-direction: row;
+}
+
+span.MuiTouchRipple-root {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
+  font-family: 'Russo One';
+  src: url('./assets/fonts/RussoOne-Regular.ttf') format('ttf');
+}
+
+@media (min-width: 0) and (max-width: 600.9px) {
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
+    svg.MuiSvgIcon-root {
+    border: 2px solid #8f00ff;
+  }
+
+  svg.MuiSvgIcon-root {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #fff;
+    height: 50px;
+    padding: 10px;
+    width: 50px;
+  }
+
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
+    svg.MuiSvgIcon-root
+    path {
+    color: #8f00ff;
+  }
+}

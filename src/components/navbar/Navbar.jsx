@@ -9,7 +9,7 @@ import LocationCityIcon from '@material-ui/icons/LocationCity'
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
 import BottomNavigation from '@material-ui/core/BottomNavigation'
 
-import icon from '../../assets/images/icon.png'
+import icon from '../../assets/images/icon.webp'
 
 import styles from './Navbar.module.css'
 

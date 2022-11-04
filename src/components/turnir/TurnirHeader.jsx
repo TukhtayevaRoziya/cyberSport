@@ -8,7 +8,7 @@ const TurnirHeader = () => {
             <div className={style.Routes}>
                 <h1>Последние турниры</h1>
                 <div className={style.Route_Link}>
-                    <NavLink className={"Turnis_Link"} to="/All">Все</NavLink>
+                    <NavLink className={"Turnis_Link"} to="/">Все</NavLink>
                     <NavLink className={"Turnis_Link"} to="/CS_GO">CS:GO</NavLink>
                     <NavLink className={"Turnis_Link"} to="/DOTA_2">DOTA 2</NavLink>
                     <NavLink className={"Turnis_Link"} to="/R6_SEGA">R6 SEGA</NavLink>

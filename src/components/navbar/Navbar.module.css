@@ -1,6 +1,6 @@
 .wrap {
   z-index: 10;
-  padding: 50px 100px;
+  padding: 30px 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,7 +12,6 @@
 .bottomNavigation {
   overflow: hidden;
   -webkit-box-pack: start;
-
   top: 0;
   margin-top: 0;
   width: 60%;

@@ -1,14 +1,14 @@
 import Header from './components/header/Header'
-import Register from './components/about/register/Register';
+import About from './components/about/About'
+import TurnirHeader from './components/turnir/TurnirHeader';
 
 import './App.css'
-import TurnirHeader from './components/turnir/TurnirHeader';
 
 function App() {
   return (
     <div>
       <Header />
-      <Register />
+      <About />
       <TurnirHeader/>
     </div>
   )

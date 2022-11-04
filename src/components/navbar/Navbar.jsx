@@ -14,11 +14,25 @@ import icon from '../../assets/images/icon.webp'
 import styles from './Navbar.module.css'
 
 export default class Navbar extends Component {
+  constructor(props) {
+    super(props)
+    this.handleScroll = this.handleScroll.bind(this)
+  }
   state = {
     value: 0,
     pathMap: ['/#about', '/#tournament', '/#abacus', '/#photo'],
     width: 0,
     height: 0,
+    scrollY: 0,
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions)
+    window.addEventListener('scroll', this.handleScroll)
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions)
+    window.removeEventListener('scroll', this.handleScroll)
   }
 
   handleChange = (event, value) => {
@@ -29,19 +43,15 @@ export default class Navbar extends Component {
     this.setState({ width: window.innerWidth, height: window.innerHeight })
   }
 
-  componentDidMount() {
-    window.addEventListener('resize', this.updateDimensions)
-  }
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateDimensions)
+  handleScroll(event) {
+    this.setState({
+      scrollY: parseInt(window.scrollY),
+    })
   }
 
   render() {
-    console.log(window.innerHeight)
     const { value, pathMap } = this.state
-    window.addEventListener('scroll', function () {
-      console.log('scrolling')
-    })
+
     const data = [
       { id: 0, value: 'О нас', icon: <LocationCityIcon /> },
       { id: 1, value: 'Турниры', icon: <GroupWorkIcon /> },
@@ -60,7 +70,16 @@ export default class Navbar extends Component {
     ))
 
     return (
-      <div className={styles.wrap}>
+      <div
+        className={styles.wrap}
+        style={
+          this.state.scrollY >= 100
+            ? {
+                background: 'rgba(0, 0, 0, 0.7)',
+              }
+            : null
+        }
+      >
         <div className={styles.img_wrap}>
           <img src={icon} alt="" draggable={false} />
         </div>

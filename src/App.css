@@ -47,6 +47,7 @@ span.MuiTouchRipple-root {
   flex: none;
   order: 1;
   flex-grow: 0;
+  text-decoration: none;
 }
 
 

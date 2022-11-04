@@ -33,9 +33,13 @@ span.MuiTouchRipple-root {
   font-size: 22px;
   line-height: 27px;
   color: #FFFFFF;
-  border-radius: 4px;
-  box-sizing: border-box !important;
+  width: 211px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 4px !important;
+  background-color: transparent;
 }
+
 
 .Turnis_Link {
   margin: 0 25px;
@@ -68,6 +72,37 @@ span.MuiTouchRipple-root {
   flex-grow: 0;
 }
 
+.about__Link {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+          animation: bg-spin 3s linear infinite;
+}
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.about__Link:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+          
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 @media (min-width: 0) and (max-width: 600.9px) {
   a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active svg.MuiSvgIcon-root {
     border: 2px solid #8f00ff;

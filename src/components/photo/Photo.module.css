@@ -1,0 +1,140 @@
+.wrap {
+  background: #160448;
+  padding: 80px 100px;
+}
+
+.wrap h1 {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+/* @keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+} */
+
+.main {
+  background: #160448;
+
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 6px;
+  box-shadow: -5px -3px 20px #cc00ff, 5px 3px 20px #68e1fd;
+  display: grid;
+  grid-template-areas: 'one two three five' 'seven eight eight nine';
+  justify-content: space-between;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #cc00ff;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#68e1fd, #68e1fd),
+  linear-gradient(#cc00ff, #cc00ff),
+  linear-gradient(#68e1fd, #68e1fd),
+  linear-gradient(#cc00ff, #cc00ff)
+  ;
+  /* animation: rotate 4s linear infinite; */
+  overflow: hidden;
+}
+
+.main::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: #160448;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.main img {
+  object-fit: contain;
+  z-index: 10;
+  transition: .2s all linear;
+}
+
+.main img:hover{
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.i1 {
+  grid-area: one;
+  border-top-left-radius: 2px;
+}
+
+.i1_block {
+  grid-area: two;
+}
+
+.i4 {
+  grid-area: three;
+}
+
+.i5 {
+  grid-area: five;
+}
+
+.main .i3_block img {
+  object-fit: cover !important;
+  width: 100%;
+}
+.main div,
+.main img {
+  height: 400px;
+}
+.main div img {
+  height: 200px;
+}
+.main .i3_block {
+  grid-area: seven;
+}
+.main .i3_block,
+.main div {
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+}
+.i7 {
+  height: 190px;
+}
+.i8 {
+  height: 190px;
+}
+
+.i9 {
+  grid-area: eight;
+  width: 100%;
+}
+
+.i10,
+.i5 {
+  width: 100%;
+  object-fit: cover !important;
+}
+.i10 {
+  grid-area: nine;
+}

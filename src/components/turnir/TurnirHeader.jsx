@@ -1,7 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import style from "./TurnirHeader.module.css"
+
 import { TurnirRoute } from './TurnirRoute'
+
+import style from "./TurnirHeader.module.css"
+
 const TurnirHeader = () => {
     return (
         <div className={style.TurnirHeader}>
@@ -19,4 +22,5 @@ const TurnirHeader = () => {
         </div>
     )
 }
+
 export default TurnirHeader

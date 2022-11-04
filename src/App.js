@@ -4,6 +4,7 @@ import TurnirHeader from './components/turnir/TurnirHeader';
 // import Photo from './components/photo/Photo';
 
 import './App.css'
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <TurnirHeader/>
       {/* <Photo/> */}
+      <Footer/>
     </div>
   )
 }

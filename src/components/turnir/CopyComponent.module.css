@@ -1,0 +1,230 @@
+.CopyComponent {
+    margin-top: 193px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Component_1 {
+    width: 43%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.Component_1 h1 {
+    margin: 0 43px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+}
+
+.Component_2 {
+    width: 43%;
+    display: grid;
+    align-self: center;
+    margin-bottom: 70px;
+}
+
+.Component_2__child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Component_2 p {
+    width: 100%;
+}
+
+.Component_2 h1 {
+    font-weight: 400;
+}
+
+.Component_2 h2 {
+    font-weight: 500;
+}
+
+.Component_2 h2,
+.Component_2 h1 {
+    font-family: 'Montserrat';
+    margin-right: 10px;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.Component_2 p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
+@media(min-width:0) and (max-width:600.9px) {
+    .CopyComponent {
+        margin-top: 50px;
+    }
+    .Component_2__child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .Component_1 {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .Component_2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .Component_2 h2,
+    .Component_2 h1 {
+        margin-right: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .Component_2 p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Component_1 h1 {
+        margin: 1rem auto;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(min-width:601px) and (max-width:650.9px) {
+    .CopyComponent {
+        margin-top: 50px;
+    }
+    .Component_2__child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .Component_1 {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+        margin-bottom: 30px;
+    }
+    .Component_2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .Component_2 h2,
+    .Component_2 h1 {
+        margin-right: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .Component_2 p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Component_1 h1 {
+        margin: 1rem auto;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(min-width:651px) and (max-width:900.9px) {
+    .CopyComponent {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .Component_2__child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .Component_1 {
+        width: 80%;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    .Component_2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .Component_2 h2,
+    .Component_2 h1 {
+        margin-right: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .Component_2 p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Component_1 h1 {
+        margin: 1rem auto;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(min-width:901px) and (max-width:1200.9px) {
+    .CopyComponent {
+        margin-top: 193px;
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Component_1 h1 {
+        margin: 0 30px;
+        font-size: 30px;
+    }
+    .Component_2 h2,
+    .Component_2 h1 {
+        font-size: 23px;
+    }
+    .Component_1 {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    .Component_1 img{
+        width: 40%;
+    }
+}

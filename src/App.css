@@ -1,13 +1,7 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-body {
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
 }
 
 .MuiBottomNavigation-root {
@@ -31,9 +25,33 @@ span.MuiTouchRipple-root {
 
 }
 
+
+
+.about__Link {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  box-sizing: border-box !important;
+}
+
+.Turnis_Link {
+  margin: 0 25px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+
 @media (min-width: 0) and (max-width: 600.9px) {
-  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
-    svg.MuiSvgIcon-root {
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active svg.MuiSvgIcon-root {
     border: 2px solid #8f00ff;
   }
 
@@ -47,9 +65,23 @@ span.MuiTouchRipple-root {
     width: 50px;
   }
 
-  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
-    svg.MuiSvgIcon-root
-    path {
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active svg.MuiSvgIcon-root path {
     color: #8f00ff;
   }
+  .Turnis_Link {
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 30px;
+    text-decoration: none;
+  }
+}
+@media(min-width:601px) and (max-width:800.9px) {
+  .Turnis_Link {
+    margin: 0 15px;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+  }
+
 }

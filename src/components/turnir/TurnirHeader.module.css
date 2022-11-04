@@ -1,0 +1,71 @@
+.TurnirHeader {
+    background-color: rgba(22, 4, 72, 1);
+    padding: 80px 100px;
+    background-image: url("../../assets/images/gane.png"), url("../../assets/images/playes_1.png"), url("../../assets/images/playest3.png"), url("../../assets/images/gone2.png");
+    background-position: top right, top left, center right, bottom left;
+    background-repeat: no-repeat;
+}
+
+.Routes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Routes h1 {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+@media(min-width:0) and (max-width:880.9px) {
+    .Routes h1 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .TurnirHeader {
+        padding: 20px 15px;
+        background-image: url("../../assets/images/playes_1.png");
+        background-position: top left;
+    }
+
+    .Route_Link {
+        overflow-x: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media(min-width:881px) and (max-width:1100.9px) {
+    .Routes h1 {
+        font-family: 'Russo One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 34px;
+        color: #FFFFFF;
+    }
+    .TurnirHeader {
+        background-color: rgba(22, 4, 72, 1);
+        padding: 80px 25px;
+        background-image: url("../../assets/images/playes_1.png"), url("../../assets/images/gone2.png");
+        background-position: top left, bottom right;
+        background-repeat: no-repeat;
+    }
+}
+@media(min-width:1101px) and (max-width:1200.9px) {
+    .TurnirHeader {
+        background-color: rgba(22, 4, 72, 1);
+        padding: 40px 30px;
+        background-image: url("../../assets/images/playes_1.png"), url("../../assets/images/gone2.png");
+        background-position: top left, bottom right;
+        background-repeat: no-repeat;
+    }
+}

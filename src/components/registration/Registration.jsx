@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+
+import avatar from '../../assets/images/register_player.png'
+
 import styles from './Registration.module.css'
 
 const Registration = () => {
@@ -7,6 +11,23 @@ const Registration = () => {
       <div className={styles.block}>
         <div className={styles.main}>
           <h1>Регистрация</h1>
+          <div className={styles.choose}>
+            <NavLink to={'/'}>Один игрок</NavLink>
+            <NavLink to={'/team'}>Команда</NavLink>
+          </div>
+          <div className={styles.upload_img}>
+            <img draggable={false} src={avatar} alt="" />
+            <div className={styles.upload_img__main}>
+              <input name="inp" type={'file'} accept="image/*" defaultValue={''} size="60" />
+            </div>
+          </div>
+          <Player
+            label1={'Имя'}
+            label2={'Фамилия'}
+            label3={'Направления'}
+            label4={'Почта'}
+            label5={'Телефон'}
+          />
         </div>
       </div>
     </div>
@@ -14,3 +35,53 @@ const Registration = () => {
 }
 
 export default Registration
+
+const Player = ({ label1, label2, label3, label4, label5 }) => {
+
+  const [value, setValue] = useState('+998')
+
+  return (
+    <div className={styles.inp_wrap}>
+      <div className={styles.inp_block}>
+        <div className={styles.inp_box} id={styles.label1}>
+          <label name={'label1'}>{label1}</label>
+          <input type={'text'} name={'label1'} />
+        </div>
+        <div className={styles.inp_box} id={styles.label2}>
+          <label>Опыт</label>
+          <input placeholder="От" type={'number'} min={0} />
+          <input placeholder="До" type={'number'} min={0} />
+        </div>
+      </div>
+      <div className={styles.inp_block}>
+        <div className={styles.inp_box} id={styles.label1}>
+          <label name={'label1'}>{label2}</label>
+          <input type={'text'} name={'label1'} />
+        </div>
+        <div className={styles.inp_box} id={styles.label1}>
+          <label name={'label1'}>{label3}</label>
+          <input type={'text'} name={'label1'} />
+        </div>
+      </div>
+      <div className={styles.inp_block}>
+        <div className={styles.inp_box} id={styles.label1}>
+          <label name={'label1'}>{label4}</label>
+          <input type={'text'} name={'label1'} />
+        </div>
+        <div className={styles.inp_box} id={styles.label1}>
+          <label name={'label1'}>{label5}</label>
+          <input
+            type={'tel'}
+            name={'label1'}
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            value={value}
+            id="phone"
+            maxlength={13}
+            onChange={(e) => setValue(e.target.value)}
+          />
+        </div>
+      </div>
+      <input type={'submit'} value='Отправить' className={styles.btn}/>
+    </div>
+  )
+}

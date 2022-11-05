@@ -47,27 +47,26 @@ span.MuiTouchRipple-root {
   flex: none;
   text-decoration: none;
 }
- .Turnis_Link{
+.Turnis_Link {
   position: relative;
   padding: 0 0 5px 0;
 }
-.Turnis_Link:hover{
+.Turnis_Link:hover {
   color: white;
 }
- .Turnis_Link:after {
+.Turnis_Link:after {
   position: absolute;
   bottom: 0;
-  transition: all .2s;
+  transition: all 0.2s;
   left: 0;
   right: 0;
   margin: auto;
   width: 0%;
   content: '.';
   color: transparent;
-  background: linear-gradient(92.49deg, #AD00FF 14.3%, #00E0FF 100%) !important;
+  background: linear-gradient(92.49deg, #ad00ff 14.3%, #00e0ff 100%) !important;
 
   height: 3px;
- 
 }
 .Turnis_Link:hover:after {
   width: 100%;
@@ -92,6 +91,62 @@ span.MuiTouchRipple-root {
   flex-grow: 0;
 }
 
+.Registration_choose__oJn4o .active {
+  position: relative;
+  background-color: #160448;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.Registration_choose__oJn4o .active:before,
+.glow:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(to right, #db00ff, #68e1fd, #00f260);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  border-radius: 10px;
+  border-radius: inherit;
+  animation: steam 20s infinite alternate;
+}
+
+input[type='file'] {
+  color: transparent !important;
+  width: 100%;
+}
+input[type='file']::before {
+  content: 'Fayl yuklang:';
+  margin-right: 65%;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #808191;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.Registration_choose__oJn4o .active:after {
+  filter: blur(50px);
+}
+
 .about__Link {
   --border-size: 3px;
   --border-angle: 0turn;
@@ -101,10 +156,11 @@ span.MuiTouchRipple-root {
       #112 50%,
       #213
     ),
-    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+    conic-gradient(from var(--border-angle), transparent 20%, #ad00ff, #00e0ff);
   background-size: calc(100% - (var(--border-size) * 2))
       calc(100% - (var(--border-size) * 2)),
     cover;
+
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-animation: bg-spin 3s linear infinite;
@@ -138,6 +194,7 @@ span.MuiTouchRipple-root {
   max-height: 500px !important;
   object-fit: cover;
 }
+
 @media (min-width: 0) and (max-width: 600.9px) {
   a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
     svg.MuiSvgIcon-root {
@@ -191,9 +248,9 @@ span.MuiTouchRipple-root {
   .Photo_main__\+PoMr .ant-image:nth-last-child(5) {
     display: none;
   }
-  .Photo_main__\+PoMr{
+  .Photo_main__\+PoMr {
     grid-template-areas:
-        'one two three'
-        'seven eight eight';
+      'one two three'
+      'seven eight eight';
   }
 }

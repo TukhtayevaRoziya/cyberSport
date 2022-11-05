@@ -5,6 +5,7 @@ import Footer from './components/footer/Footer'
 import TurnirHeader from './components/turnir/TurnirHeader'
 import Registration from './components/registration/Registration'
 
+import 'antd/dist/antd.css';
 import './App.css'
 
 function App() {

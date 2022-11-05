@@ -14,7 +14,7 @@ const Footer = () => {
 
           <a href="https://t.me/digitalcityuz" target="_blank" rel="noreferrer"><Telegram className={styles.icon2} /></a>
           <a target="_blank" href="https://www.instagram.com/digitalcityuz/" rel="noreferrer"> <Instagram className={styles.icon3} /></a>
-          <a target="_blank" href="https://www.youtube.com/channel/UCDouP-Wfsl-ZMAiKIApIXWQ"  rel="noreferrer">    <YouTube className={styles.icon4} /></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCDouP-Wfsl-ZMAiKIApIXWQ" rel="noreferrer">    <YouTube className={styles.icon4} /></a>
 
 
         </div>
@@ -34,7 +34,7 @@ const Footer = () => {
       <div className={styles.Footer_block4}>
         <h1>Sign up to our newsletter!</h1>
         <p>Do you wont to receive the latest updates  and spesial offers ? Enter you email below to receive our weekly newsletter</p>
-        <input type="text" className={styles.Input} />
+        <input type="text" placeholder='Enter your Email' className={styles.Input} />
         <div className={styles.Block_Check}>
           <input type="checkbox" /> <label htmlFor="">I accept newsletter terms</label>
         </div>

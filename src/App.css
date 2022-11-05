@@ -76,7 +76,6 @@ span.MuiTouchRipple-root {
 
   font-weight: 600;
 }
-
 .footerLink {
   width: 100%;
   font-family: 'Montserrat';
@@ -202,29 +201,6 @@ input[type='file']::before {
   min-height: 500px;
   max-height: 500px !important;
   object-fit: cover;
-}
-.Mui-selected spmn {
-  color: red !important;
-}
-.Mui-selected span:after {
-  position: absolute;
-  bottom: 0;
-  transition: all 0.2s;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: linear-gradient(92.49deg, #ad00ff 14.3%, #00e0ff 100%) !important;
-
-  height: 3px;
-}
-
-.Mui-selected span:hover:after {
-  width: 100%;
-
-  font-weight: 600;
 }
 @media (min-width: 0) and (max-width: 600.9px) {
   input[type='file'] {

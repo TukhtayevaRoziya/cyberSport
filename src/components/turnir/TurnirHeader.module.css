@@ -1,7 +1,7 @@
 .TurnirHeader {
     background-color: rgba(22, 4, 72, 1);
     padding: 80px 100px;
-    background-image: url("../../assets/images/gane.webp"), url("../../assets/images/playes_1.png"), url("../../assets/images/playest3.png"), url("../../assets/images/gone2.webp");
+    background-image: url("../../assets/images/gane.webp"), url("../../assets/images/playes_1.webp"), url("../../assets/images/playest3.webp"), url("../../assets/images/gone2.webp");
     background-position: top right, top left, center right, bottom left;
     background-repeat: no-repeat;
 }
@@ -36,7 +36,7 @@
     }
     .TurnirHeader {
         padding: 20px 15px;
-        background-image: url("../../assets/images/playes_1.png");
+        background-image: url("../../assets/images/playes_1.webp");
         background-position: top left;
     }
 
@@ -59,7 +59,7 @@
     .TurnirHeader {
         background-color: rgba(22, 4, 72, 1);
         padding: 80px 25px;
-        background-image: url("../../assets/images/playes_1.png"), url("../../assets/images/gone2.webp");
+        background-image: url("../../assets/images/playes_1.webp"), url("../../assets/images/gone2.webp");
         background-position: top left, bottom right;
         background-repeat: no-repeat;
     }
@@ -68,7 +68,7 @@
     .TurnirHeader {
         background-color: rgba(22, 4, 72, 1);
         padding: 40px 30px;
-        background-image: url("../../assets/images/playes_1.png"), url("../../assets/images/gone2.webp");
+        background-image: url("../../assets/images/playes_1.webp"), url("../../assets/images/gone2.webp");
         background-position: top left, bottom right;
         background-repeat: no-repeat;
     }

@@ -5,7 +5,9 @@ const Registration = () => {
   return (
     <div className={styles.wrap}>
       <div className={styles.block}>
-
+        <div className={styles.main}>
+          <h1>Регистрация</h1>
+        </div>
       </div>
     </div>
   )

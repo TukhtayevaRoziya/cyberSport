@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink, Route, Routes } from 'react-router-dom'
 
-import avatar from '../../assets/images/register_player.png'
+import avatar from '../../assets/images/register_player.webp'
 
 import styles from './Registration.module.css'
 

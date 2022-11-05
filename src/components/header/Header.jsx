@@ -14,7 +14,7 @@ const Header = () => {
             ДОБРО ПОЖАЛОВАТЬ В ИГРУ
             <br />
             <svg viewBox="0 0 1320 70">
-              <text x="50%" y="80%" dy="0" text-anchor="middle">
+              <text x="50%" y="80%" dy="0" textAnchor="middle">
                 DC cyber В
               </text>
             </svg>

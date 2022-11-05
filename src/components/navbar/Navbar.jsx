@@ -19,7 +19,7 @@ export default class Navbar extends Component {
   }
   state = {
     value: 0,
-    pathMap: ['/#about', '/#tournament', '/#abacus', '/#photo'],
+    pathMap: ['#about', '#tournament', '#abacus', '#photo'],
     width: 0,
     height: 0,
     scrollY: 0
@@ -83,7 +83,7 @@ export default class Navbar extends Component {
         }
       >
         <div className={styles.img_wrap}>
-          <img src={icon} alt="" draggable={false} />
+          <img src={icon} alt="rasm bor edi!!" draggable={false} />
         </div>
 
         <div className={styles.main_wrap}>

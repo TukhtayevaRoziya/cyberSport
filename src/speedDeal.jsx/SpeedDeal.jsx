@@ -1,17 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import SpeedDial from '@material-ui/lab/SpeedDial';
-import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
 import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
-import FileCopyIcon from '@material-ui/icons/FileCopyOutlined';
-import SaveIcon from '@material-ui/icons/Save';
-import PrintIcon from '@material-ui/icons/Print';
-import ShareIcon from '@material-ui/icons/Share';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import EditIcon from '@material-ui/icons/Edit';
 import CallIcon from '@material-ui/icons/Call';
 import styles from './SpeedDeal.module.css'
 import { Facebook, Instagram, Telegram, YouTube } from '@material-ui/icons'
+import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,13 +20,15 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const actions = [
-  { icon: <Telegram />, href:"",  name: 'Telegram' },
-  { icon: <YouTube />, name: 'YouTube' },
-  { icon: <Instagram />, name: 'Instagram' },
-  { icon: <Facebook />, href:"https://ru-ru.facebook.com/digitalcityuz/" ,name: 'Facebook' },
+  { icon: <Telegram />, href: "https://t.me/digitalcityuz", name: 'Telegram' },
+  { icon: <YouTube />, href: "https://www.youtube.com/channel/UCDouP-Wfsl-ZMAiKIApIXWQ", name: 'YouTube' },
+  { icon: <Instagram />, href: "https://www.instagram.com/digitalcityuz/", name: 'Instagram' },
+  { icon: <Facebook />, href: "https://ru-ru.facebook.com/digitalcityuz/", name: 'Facebook' },
 ];
 
 export default function OpenIconSpeedDial() {
+  const navigate = useNavigate();
+
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [hidden, setHidden] = React.useState(false);
@@ -48,24 +44,21 @@ export default function OpenIconSpeedDial() {
     <div className={classes.root + ' ' + styles.wrap}>
       <div class={styles.call_animation}>
         <SpeedDial
-          ariaLabel="SpeedDial openIcon example"
-          className={classes.speedDial}
-          hidden={hidden}
-          icon={<CallIcon className={styles.trin_trin} />}
-          onClose={handleClose}
-          onOpen={handleOpen}
-          open={open}
+            ariaLabel="SpeedDial openIcon example"
+            className={classes.speedDial}
+            hidden={hidden}
+            icon={<CallIcon/>}
+            onClose={handleClose}
+            onOpen={handleOpen}
+            open={open}
         >
           {actions.map((action) => (
-            <a target="_blank" key={action.name} href={action.href} rel="noreferrer">
               <SpeedDialAction
-                
                 icon={action.icon}
                 tooltipTitle={action.name}
                 onClick={handleClose}
+                href={action.href}
               />
-            </a>
-
           ))}
         </SpeedDial>
       </div>

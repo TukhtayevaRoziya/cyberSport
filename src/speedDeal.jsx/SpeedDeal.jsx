@@ -26,10 +26,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const actions = [
-  { icon: <Telegram />, name: 'Telegram' },
+  { icon: <Telegram />, href:"",  name: 'Telegram' },
   { icon: <YouTube />, name: 'YouTube' },
   { icon: <Instagram />, name: 'Instagram' },
-  { icon: <Facebook />, name: 'Facebook' },
+  { icon: <Facebook />, href:"https://ru-ru.facebook.com/digitalcityuz/" ,name: 'Facebook' },
 ];
 
 export default function OpenIconSpeedDial() {
@@ -48,25 +48,28 @@ export default function OpenIconSpeedDial() {
     <div className={classes.root + ' ' + styles.wrap}>
       <div class={styles.call_animation}>
         <SpeedDial0
-        ariaLabel="SpeedDial openIcon example"
-        className={classes.speedDial}
-        hidden={hidden}
-        icon={<CallIcon className={styles.trin_trin}/>}
-        onClose={handleClose}
-        onOpen={handleOpen}
-        open={open}
-      >
-        {actions.map((action) => (
-          <SpeedDialAction
-            key={action.name}
-            icon={action.icon}
-            tooltipTitle={action.name}
-            onClick={handleClose}
-          />
-        ))}
-      </SpeedDial0>
+          ariaLabel="SpeedDial openIcon example"
+          className={classes.speedDial}
+          hidden={hidden}
+          icon={<CallIcon className={styles.trin_trin} />}
+          onClose={handleClose}
+          onOpen={handleOpen}
+          open={open}
+        >
+          {actions.map((action) => (
+            <a target="_blank" key={action.name} href={action.href} rel="noreferrer">
+              <SpeedDialAction
+                
+                icon={action.icon}
+                tooltipTitle={action.name}
+                onClick={handleClose}
+              />
+            </a>
+
+          ))}
+        </SpeedDial0>
       </div>
-      
+
     </div>
   );
 }

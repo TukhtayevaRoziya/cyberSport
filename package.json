@@ -11,9 +11,11 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.24.1",
     "react": "^18.2.0",
+    "react-countup": "^6.3.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
+    "react-visibility-sensor": "^5.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

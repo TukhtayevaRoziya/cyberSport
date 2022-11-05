@@ -1,0 +1,102 @@
+.wrap {
+  background: #160448;
+  padding: 10px 100px 0;
+}
+
+.wrap h1 {
+  margin: 0;
+}
+
+.counter_body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter_block {
+  padding: 40px 10px;
+  box-sizing: border-box;
+  width: 23%;
+  height: auto;
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(90deg, #da04ff 0%, #00e0ff 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 10000px 1px #160448 inset;
+  transition: none !important;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 30px auto;
+  backdrop-filter: blur(22px);
+
+  border-radius: 20px;
+  text-align: center;
+}
+
+.counter_block span {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 55px;
+
+  letter-spacing: 0.14em;
+
+  color: #ffffff;
+}
+
+.counter_block span::before {
+  content: '+';
+}
+
+.counter_block h1 {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+
+  letter-spacing: 0.14em;
+
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width:600.9px) {
+  .wrap{
+    padding: 40px 15px 0;
+  }
+
+  .counter_body{
+    flex-direction: column;
+  }
+  .counter_block{
+    width: 80%;
+  }
+
+  .counter_block span{
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .counter_block h1{
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 601px) and (max-width:1059.9px) {
+  .wrap{
+    padding: 30px calc(15px + 5%) 10px;
+  }
+  .counter_body{
+    flex-wrap: wrap;
+  }
+  .counter_block{
+    width: 45%;
+  }
+}

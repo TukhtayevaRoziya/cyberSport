@@ -98,7 +98,7 @@ const Player = ({ label1, label2, label3, label4 }) => {
             pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             value={value}
             id="phone"
-            maxlength={13}
+            maxLength={13}
             onChange={(e) => setValue(e.target.value)}
           />
         </div>

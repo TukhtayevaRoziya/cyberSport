@@ -10,12 +10,16 @@
   height: 100%;
 }
 
-.title_wrap{
+.title_wrap {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.title {
+  width: 100%;
 }
 
 .title,
@@ -31,28 +35,63 @@
   color: #ffffff;
 }
 
-.title code{
-  color: #8F00FF;
+.title svg {
+  font-family: 'Russo One', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin-top: calc(102px - 82px);
+}
+.title svg text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #ffffff;
+  font-size: 60px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #8f00ff;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #8f00ff;
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #8f00ff;
+    stroke-width: 3;
+  }
+  100% {
+    fill: #8f00ff;
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
 }
 
-@media screen and (max-width:600.9px) {
-  .title{
+@media screen and (max-width: 600.9px) {
+  .title {
     width: 90%;
     margin: 0 auto;
   }
   .title,
-  .title code{
+  .title code {
     font-size: 20px;
     line-height: 31px;
   }
-  .body{
-    height: 50vh;
+  .body {
+    height: 60vh;
   }
 }
 
 @media (min-width: 601px) and (max-width: 1059.9px) {
   .title,
-  .title code{
+  .title code {
     font-size: 30px;
     line-height: 41px;
   }

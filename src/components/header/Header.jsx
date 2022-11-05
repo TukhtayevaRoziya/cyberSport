@@ -11,7 +11,13 @@ const Header = () => {
         <Navbar />
         <div className={styles.title_wrap}>
           <h1 className={styles.title}>
-            ДОБРО ПОЖАЛОВАТЬ В ИГРУ <br /> <code> DC cyber </code> В <br />{' '}
+            ДОБРО ПОЖАЛОВАТЬ В ИГРУ
+            <br />
+            <svg viewBox="0 0 1320 70">
+              <text x="50%" y="80%" dy="0" text-anchor="middle">
+                DC cyber В
+              </text>
+            </svg>
             КИБЕРСПОРТИВНЫХ ИГРАХ
           </h1>
         </div>

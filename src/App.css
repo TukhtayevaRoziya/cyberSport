@@ -24,6 +24,9 @@
   box-sizing: border-box !important;
 }
 
+body{
+  overflow-x: hidden;
+}
 .MuiBottomNavigation-root {
   height: 2rem;
   display: flex;

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Footer.module.css'
 import img from "../../assets/images/footer1.png"
 import { Facebook, Instagram, Telegram, YouTube } from '@material-ui/icons'
-import { NavLink } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <div className={styles.Footer}>

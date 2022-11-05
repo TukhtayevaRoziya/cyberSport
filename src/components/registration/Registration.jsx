@@ -7,7 +7,7 @@ import styles from './Registration.module.css'
 
 const Registration = () => {
   return (
-    <div className={styles.wrap}>
+    <div className={styles.wrap} id='registration'>
       <div className={styles.block}>
         <div className={styles.main}>
           <h1>Регистрация</h1>

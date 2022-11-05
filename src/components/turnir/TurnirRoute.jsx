@@ -15,7 +15,7 @@ export const TurnirRoute = () => {
         </Route>
     </Routes>);
     return (
-        <div>
+        <div id='tournament'>
             {mapRoute}
         </div>
     );

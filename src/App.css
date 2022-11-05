@@ -170,6 +170,7 @@ input[type='file']::before {
   background-repeat: no-repeat;
   -webkit-animation: bg-spin 3s linear infinite;
   animation: bg-spin 3s linear infinite;
+  padding: 1rem;
 }
 
 @-webkit-keyframes bg-spin {

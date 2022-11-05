@@ -13,9 +13,9 @@ import './App.css'
 function App() {
   return (
     <div>
+      <OpenIconSpeedDial />
       <Header />
       <About />
-      <OpenIconSpeedDial />
       <TurnirHeader />
       <Photo />
       <Count />

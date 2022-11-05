@@ -1,43 +1,57 @@
-.wrap{
-    top: 0;
-    bottom: 0rem;
-    right: 0;
-    position: fixed;
+.wrap {
+  top: 0;
+  bottom: 0rem;
+  right: 0;
+  position: fixed;
 }
-.trin_trin
-{
-    animation-name: trin !important ;
-    animation-duration: 1.5s !important;
-    animation-iteration-count: infinite !important;
-    animation-timing-function: linear !important;
+.trin_trin {
+  animation-name: trin !important ;
+  animation-duration: 1.5s !important;
+  animation-iteration-count: infinite !important;
+  animation-timing-function: linear !important;
 }
 @keyframes trin {
-
-    from {
-        transform:rotate3d(0, 0, 1, 0deg);
-    }
-    20%, 32%, 44%, 56%, 68% {
-        transform: rotate3d(0, 0, 1, 0deg);
-    }
-    23%, 35%, 47%, 59%, 71% {
-        transform: rotate3d(0,0,1,15deg);
-    }
-    26%, 38%, 50%, 62%, 74% {
-        transform: rotate3d(0,0,1,0deg);
-    }
-    29%, 41%, 53%, 65%, 77% {
-        transform: rotate3d(0,0,1,-15deg);
-    }
-    80% {
-        transform:rotate3d(0, 0, 1, 0deg);
-    }
-
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  20%,
+  32%,
+  44%,
+  56%,
+  68% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  23%,
+  35%,
+  47%,
+  59%,
+  71% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  26%,
+  38%,
+  50%,
+  62%,
+  74% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  29%,
+  41%,
+  53%,
+  65%,
+  77% {
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
 }
-@media(min-width:0) and (max-width:600.9px){
-    .wrap{
-        top: 0;
-        bottom: 5rem;
-        right: 0;
-        position: fixed;
-    }
+@media (min-width: 0) and (max-width: 600.9px) {
+  .wrap {
+    top: 0;
+    bottom: 5rem;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+  }
 }

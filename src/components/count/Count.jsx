@@ -6,7 +6,7 @@ import styles from './Count.module.css'
 
 export const Count = memo(() => {
   return (
-    <div className={styles.wrap}>
+    <div className={styles.wrap} id='abacus'>
         <div className={styles.counter_body}>
           <div className={styles.counter_block}>
             <CountUp start={1} end={1300} duration={0.7}>

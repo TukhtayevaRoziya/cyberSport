@@ -45,7 +45,7 @@ const About = () => {
 
   return (
     <>
-      <div className={styles.wrap}>
+      <div className={styles.wrap} id='about'>
         <h1 className={styles.title}>
           Digital City — профессиональная игровая организация, созданная в 2019
           году. Наша цель — объединить самых талантливых киберспортсменов со

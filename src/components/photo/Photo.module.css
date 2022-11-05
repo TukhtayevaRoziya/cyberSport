@@ -14,12 +14,6 @@
   margin-bottom: 2rem;
 }
 
-/* @keyframes rotate {
-  100% {
-    transform: rotate(1turn);
-  }
-} */
-
 .main {
   background: #160448;
 
@@ -49,11 +43,8 @@
   background-size: 50% 50%, 50% 50%;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
   background-image: linear-gradient(#68e1fd, #68e1fd),
-  linear-gradient(#cc00ff, #cc00ff),
-  linear-gradient(#68e1fd, #68e1fd),
-  linear-gradient(#cc00ff, #cc00ff)
-  ;
-  /* animation: rotate 4s linear infinite; */
+    linear-gradient(#cc00ff, #cc00ff), linear-gradient(#68e1fd, #68e1fd),
+    linear-gradient(#cc00ff, #cc00ff);
   overflow: hidden;
 }
 
@@ -73,12 +64,14 @@
 .main img {
   object-fit: contain;
   z-index: 10;
-  transition: .2s all linear;
+  transition: 0.2s all linear;
+  border: 2px solid transparent;
 }
 
-.main img:hover{
-  border: 2px solid transparent;
+.main img:hover {
+  border: 2px solid #8f00ff;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .i1 {
@@ -104,10 +97,12 @@
 }
 .main div,
 .main img {
-  height: 400px;
+  height: 100%;
+  object-fit: cover;
 }
 .main div img {
-  height: 200px;
+  height: 100%;
+  object-fit: cover;
 }
 .main .i3_block {
   grid-area: seven;
@@ -137,4 +132,40 @@
 }
 .i10 {
   grid-area: nine;
+}
+
+@media (min-width: 0) and (max-width: 600.9px) {
+  .wrap {
+    padding: 0 30px;
+  }
+
+  .wrap h1 {
+    text-align: center;
+  }
+
+  .main {
+    grid-template-areas:
+      'one'
+      'three'
+      'five';
+  }
+  .i3_block,
+  .i1_block {
+    display: none !important;
+  }
+
+  .main div {
+    height: auto;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1059.9px) {
+  .wrap {
+    padding: 0 20px;
+  }
+
+  .main .i3_block,
+  .main div {
+    height: 300px;
+  }
 }

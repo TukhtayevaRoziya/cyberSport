@@ -22,17 +22,14 @@ span.MuiTouchRipple-root {
 @font-face {
   font-family: 'Russo One';
   src: url('./assets/fonts/russo/RussoOne-Regular.ttf') format('ttf');
-
 }
-
-
 
 .about__Link {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 211px;
   height: 60px;
   cursor: pointer;
@@ -40,14 +37,13 @@ span.MuiTouchRipple-root {
   background-color: transparent !important;
 }
 
-
 .Turnis_Link {
   margin: 0 25px;
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 22px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   flex: none;
   text-decoration: none;
 }
@@ -90,7 +86,7 @@ span.MuiTouchRipple-root {
   text-decoration: none;
   line-height: 168%;
   letter-spacing: 0.14em;
-  color: #FFFFFF;
+  color: #ffffff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -99,12 +95,20 @@ span.MuiTouchRipple-root {
 .about__Link {
   --border-size: 3px;
   --border-angle: 0turn;
-  background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
-  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-animation: bg-spin 3s linear infinite;
-          animation: bg-spin 3s linear infinite;
+  animation: bg-spin 3s linear infinite;
 }
 @-webkit-keyframes bg-spin {
   to {
@@ -118,17 +122,25 @@ span.MuiTouchRipple-root {
 }
 .about__Link:hover {
   -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-          
+  animation-play-state: paused;
 }
 
 @property --border-angle {
-  syntax: "<angle>";
+  syntax: '<angle>';
   inherits: true;
   initial-value: 0turn;
 }
+
+.ant-image-preview-img {
+  max-width: 500px !important;
+  min-width: 500px;
+  min-height: 500px;
+  max-height: 500px !important;
+  object-fit: cover;
+}
 @media (min-width: 0) and (max-width: 600.9px) {
-  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active svg.MuiSvgIcon-root {
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
+    svg.MuiSvgIcon-root {
     border: 2px solid #8f00ff;
   }
 
@@ -142,7 +154,9 @@ span.MuiTouchRipple-root {
     width: 50px;
   }
 
-  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active svg.MuiSvgIcon-root path {
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
+    svg.MuiSvgIcon-root
+    path {
     color: #8f00ff;
   }
 
@@ -153,14 +167,33 @@ span.MuiTouchRipple-root {
     line-height: 30px;
     text-decoration: none;
   }
+
+  .Photo_i3_block__OLDTD .ant-image,
+  .Photo_i1_block__y3jpp .ant-image,
+  .Photo_main__\+PoMr .ant-image:last-child,
+  .Photo_main__\+PoMr .ant-image:nth-last-child(2) {
+    display: none !important;
+  }
+  .ant-image-preview-img {
+    min-width: auto;
+    min-height: auto;
+  }
 }
 
-@media(min-width:601px) and (max-width:800.9px) {
+@media (min-width: 601px) and (max-width: 800.9px) {
   .Turnis_Link {
     margin: 0 15px;
     font-size: 20px;
     line-height: 30px;
     text-decoration: none;
   }
-
+  .Photo_main__\+PoMr .ant-image:last-child,
+  .Photo_main__\+PoMr .ant-image:nth-last-child(5) {
+    display: none;
+  }
+  .Photo_main__\+PoMr{
+    grid-template-areas:
+        'one two three'
+        'seven eight eight';
+  }
 }

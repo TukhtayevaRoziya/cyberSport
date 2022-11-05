@@ -19,21 +19,21 @@ const Photo = () => {
     <div id="photo" className={styles.wrap}>
       <h1>Фото Галерея</h1>
       <div className={styles.main}>
-        <Image className={styles.i1} src={i1} />
+        <Image className={styles.i1} src={i1} alt="" />
         <div className={styles.i1_block}>
-          <Image className={styles.i2} src={i2} />
-          <Image className={styles.i3} src={i3} />
+          <Image className={styles.i2} src={i2} alt="" />
+          <Image className={styles.i3} src={i3} alt="" />
         </div>
-        <Image className={styles.i4} src={i4} />
-        <Image className={styles.i5} src={i5} />
+        <Image className={styles.i4} src={i4} alt="" />
+        <Image className={styles.i5} src={i5} alt="" />
 
         <div className={styles.i3_block}>
-          <Image className={styles.i7} src={i7} />
-          <Image className={styles.i8} src={i8} />
+          <Image className={styles.i7} src={i7} alt="" />
+          <Image className={styles.i8} src={i8} alt="" />
         </div>
-        <Image className={styles.i9} src={i9} />
-        <Image className={styles.i10} src={i10} />
-        <Image className={styles.i6} src={i6} />
+        <Image className={styles.i9} src={i9} alt="" />
+        <Image className={styles.i10} src={i10} alt="" />
+        <Image className={styles.i6} src={i6} alt="" />
       </div>
     </div>
   )

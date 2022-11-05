@@ -37,7 +37,7 @@ span.MuiTouchRipple-root {
   height: 60px;
   cursor: pointer;
   border-radius: 4px !important;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 
@@ -147,9 +147,9 @@ span.MuiTouchRipple-root {
   }
 
   .Turnis_Link {
-    margin: 0 15px;
+    margin: 0 0px;
+    padding: 0 1rem;
     font-size: 18px;
-    text-decoration: none;
     line-height: 30px;
     text-decoration: none;
   }

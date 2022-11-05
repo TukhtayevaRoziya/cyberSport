@@ -153,7 +153,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        border: 2px solid red;
+        margin-bottom: 1rem;
     }
 
     .Footer_block2 {
@@ -168,6 +168,7 @@
         width: 100%;
         flex-wrap: wrap;
         display: flex;
+        margin-top: 1.5rem;
         justify-content: center;
     }
 
@@ -207,14 +208,12 @@
     }
 
     .Input {
-        border: 2px solid red !important;
         width: 50% !important;
         height: 30px;
         text-align: center;
     }
 
     .Block_Check {
-        border: 2px solid red;
         margin-top: 1rem;
         display: flex;
         align-items: center;
@@ -255,7 +254,6 @@
 
 @media(min-width:601px) and (max-width:800.9px) {
     .Footer {
-        border: 2px solid red;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -265,12 +263,10 @@
 
     .Footer_block1 {
         width: 45%;
-        border: 2px solid red;
     }
 
     .Footer_block2 {
         width: 45%;
-        border: 2px solid red;
         display: flex;
         flex-wrap: wrap;
     }
@@ -301,7 +297,6 @@
         text-align: center;
     }
     .Block_Check {
-        border: 2px solid red;
         width: 100%;
         display: flex;
         justify-content: center;

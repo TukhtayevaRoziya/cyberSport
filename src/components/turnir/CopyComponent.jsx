@@ -17,6 +17,7 @@ const CopyComponent = (props) => {
           <h2>{a.game_type}</h2>
         </div>
         <p>{a.data}</p>
+        
       </div>
     </React.Fragment>
   )

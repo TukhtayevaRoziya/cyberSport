@@ -17,14 +17,18 @@
     color: #FFFFFF;
     margin-bottom: 50px;
 }
+
 @media (min-width:0) and (max-width:550.9px){
     .Register {
         height: auto;
         padding: 25px 15px;
     }
+    .Link{
+        text-align: center;
+    }
     .title {
         width: 100%;
-        font-size: 26px;
+        font-size: 20px;
         text-align: center;
         letter-spacing: 0.12em;
         margin-bottom: 30px;

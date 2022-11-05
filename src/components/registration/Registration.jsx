@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink, Route, Routes } from 'react-router-dom'
 
-import avatar from '../../assets/images/register_player.webp'
+import avatar from '../../assets/images/register_player.png'
 
 import styles from './Registration.module.css'
 
@@ -71,32 +71,32 @@ const Player = ({ label1, label2, label3, label4 }) => {
     <div className={styles.inp_wrap}>
       <div className={styles.inp_block}>
         <div className={styles.inp_box} id={styles.label1}>
-          <label for={'label1'}>{label1}</label>
-          <input type={'text'} name={'label1'} id='Player_1' />
+          <label name={'label1'}>{label1}</label>
+          <input type={'text'} name={'label1'} />
         </div>
         <div className={styles.inp_box} id={styles.label2}>
-          <label for='Player_2'>Опыт</label>
-          <input placeholder="От" type={'number'} min={0}  id='Player_2' />
-          <input placeholder="До" type={'number'} min={0}  id='Player_2' />
+          <label>Опыт</label>
+          <input placeholder="От" type={'number'} min={0} />
+          <input placeholder="До" type={'number'} min={0} />
         </div>
       </div>
       <div className={styles.inp_block}>
         <div className={styles.inp_box} id={styles.label1}>
-          <label for={'label1'}>{label2}</label>
-          <input type={'text'} id={'Player_4'} />
+          <label name={'label1'}>{label2}</label>
+          <input type={'text'} name={'label1'} />
         </div>
         <div className={styles.inp_box} id={styles.label1}>
-          <label for={'label1'}>Направления</label>
-          <input type={'text'} id={'Player_5'} />
+          <label name={'label1'}>Направления</label>
+          <input type={'text'} name={'label1'} />
         </div>
       </div>
       <div className={styles.inp_block}>
         <div className={styles.inp_box} id={styles.label1}>
-          <label for={'label1'}>{label3}</label>
-          <input type={'text'} id={'Player_6'} />
+          <label name={'label1'}>{label3}</label>
+          <input type={'text'} name={'label1'} />
         </div>
         <div className={styles.inp_box} id={styles.label1}>
-          <label for={'label1'}>{label4}</label>
+          <label name={'label1'}>{label4}</label>
           <input
             type={'tel'}
             name={'label1'}
@@ -108,7 +108,7 @@ const Player = ({ label1, label2, label3, label4 }) => {
           />
         </div>
       </div>
-      <input type={'submit'} id='btn' value="Отправить" className={styles.btn} />
+      <input type={'submit'} value="Отправить" className={styles.btn} />
     </div>
   )
 }

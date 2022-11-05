@@ -9,10 +9,13 @@ const Footer = () => {
       <div className={styles.Footer_block1}>
         <img src={img} alt="" />
         <div className={styles.socialMedia}>
-          <Facebook className={styles.icon1} />
-          <Telegram className={styles.icon2} />
-          <Instagram className={styles.icon3} />
-          <YouTube className={styles.icon4} />
+          <a target="_blank" href="https://ru-ru.facebook.com/digitalcityuz/" rel="noreferrer"> <Facebook className={styles.icon1} />
+          </a>
+
+          <a href="https://t.me/digitalcityuz" target="_blank" rel="noreferrer"><Telegram className={styles.icon2} /></a>
+          <a target="_blank" href="https://www.instagram.com/digitalcityuz/" rel="noreferrer"> <Instagram className={styles.icon3} /></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCDouP-Wfsl-ZMAiKIApIXWQ"  rel="noreferrer">    <YouTube className={styles.icon4} /></a>
+
 
         </div>
       </div>
@@ -33,7 +36,6 @@ const Footer = () => {
         <p>Do you wont to receive the latest updates  and spesial offers ? Enter you email below to receive our weekly newsletter</p>
         <input type="text" className={styles.Input} />
         <div className={styles.Block_Check}>
-
           <input type="checkbox" /> <label htmlFor="">I accept newsletter terms</label>
         </div>
       </div>

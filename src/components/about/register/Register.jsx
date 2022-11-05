@@ -1,7 +1,9 @@
 import React from 'react'
 // import { NavLink } from 'react-router-dom'
 import style from './Register.module.css'
+
 const Register = () => {
+
   return (
     <div className={style.Register} id="about">
       <h1 className={style.title}>
@@ -10,7 +12,11 @@ const Register = () => {
       </h1>
       <div className={style.Link}>
         {/* <NavLink to="/registratsiya" className="about__Link"> */}
-          <button className="about__Link">Записаться</button>
+        <a href='/#registration'
+          className="about__Link"
+        >
+          Записаться
+        </a>
       </div>
     </div>
   )

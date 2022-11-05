@@ -5,7 +5,6 @@ import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
 import CallIcon from '@material-ui/icons/Call';
 import styles from './SpeedDeal.module.css'
 import { Facebook, Instagram, Telegram, YouTube } from '@material-ui/icons'
-import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,11 +26,9 @@ const actions = [
 ];
 
 export default function OpenIconSpeedDial() {
-  const navigate = useNavigate();
 
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  const [hidden, setHidden] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
   };
@@ -46,7 +43,7 @@ export default function OpenIconSpeedDial() {
         <SpeedDial
             ariaLabel="SpeedDial openIcon example"
             className={classes.speedDial}
-            hidden={hidden}
+            hidden={false}
             icon={<CallIcon className={styles.trin_trin}/>}
             onClose={handleClose}
             onOpen={handleOpen}

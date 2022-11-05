@@ -81,11 +81,15 @@
   }
   .title,
   .title code {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 31px;
   }
   .body {
-    height: 60vh;
+    height: 80vh;
+  }
+  .title svg {
+    transform: scale(1.1);
+    margin-top: calc(102px - 100px);
   }
 }
 

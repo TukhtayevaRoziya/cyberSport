@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
 
 import PhotoIcon from '@material-ui/icons/Photo'
 import EventNoteIcon from '@material-ui/icons/EventNote'
@@ -23,7 +22,7 @@ export default class Navbar extends Component {
     pathMap: ['#about', '#tournament', '#abacus', '#photo'],
     width: 0,
     height: 0,
-    scrollY: 0,
+    scrollY: 0
   }
 
   componentDidMount() {
@@ -59,13 +58,15 @@ export default class Navbar extends Component {
       { id: 3, value: 'Фото', icon: <PhotoIcon /> },
     ]
 
+    const a = `a`
+
     const dataMap = data.map((d) => (
       <BottomNavigationAction
         key={d.id}
         icon={window.innerWidth >= 600 ? d.value : d.icon}
         value={d.value}
-        component={NavLink}
-        to={pathMap[d.id]}
+        component={a}
+        href={pathMap[d.id]}
         className={styles.ButtonLink}
       />
     ))
@@ -92,8 +93,12 @@ export default class Navbar extends Component {
             className={'nav primary ' + styles.bottomNavigation}
           >
             {dataMap}
+            {/* <a href='#about'>about</a>
+            <a href='#about'>about</a>
+            <a href='#about'>about</a>
+            <a href='#about'>about</a> */}
           </BottomNavigation>
-          <button className={styles.btn}>Регистрация</button>
+          <a href='#registration' className={styles.btn}>Регистрация</a>
         </div>
       </div>
     )

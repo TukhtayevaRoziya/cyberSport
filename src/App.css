@@ -24,6 +24,9 @@
   box-sizing: border-box !important;
 }
 
+body{
+  overflow-x: hidden;
+}
 .MuiBottomNavigation-root {
   height: 2rem;
   display: flex;
@@ -137,25 +140,6 @@ span.MuiTouchRipple-root {
   animation: steam 20s infinite alternate;
 }
 
-input[type='file'] {
-  color: transparent !important;
-  width: 100%;
-  padding: 0 calc((100% - (117px + 163px)) / 2);
-
-}
-input[type='file']::before {
-  content: 'Fayl yuklang:';
-  margin-right: 10px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 30px;
-
-  color: #808191;
-}
-
 @keyframes steam {
   0% {
     background-position: 0 0;
@@ -190,6 +174,7 @@ input[type='file']::before {
   background-repeat: no-repeat;
   -webkit-animation: bg-spin 3s linear infinite;
   animation: bg-spin 3s linear infinite;
+  padding: 1rem;
 }
 
 @-webkit-keyframes bg-spin {

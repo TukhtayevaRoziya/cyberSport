@@ -49,6 +49,10 @@
   margin-left: 70px;
 }
 
+.btn:hover{
+  color: #fff;
+}
+
 .btn:is(:hover, :active) {
   background: #7000e0;
 }

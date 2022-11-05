@@ -7,29 +7,34 @@ import styles from './Registration.module.css'
 
 const Registration = () => {
   return (
-    <div className={styles.wrap}>
+    <div className={styles.wrap} id="registration">
       <div className={styles.block}>
         <div className={styles.main}>
           <h1>Регистрация</h1>
           <div className={styles.choose}>
-            <NavLink to={'/'}>Один игрок</NavLink>
-            <NavLink to={'*/team'}>Команда</NavLink>
+            <NavLink to={'/*'}>Один игрок</NavLink>
+            <NavLink to={'team'}>Команда</NavLink>
           </div>
           <div className={styles.upload_img}>
             <img draggable={false} src={avatar} alt="" />
             <div className={styles.upload_img__main}>
+              <h5 className={styles.upload_img_text}>Fayl yuklang...</h5>
+              <label for='inp' className={styles.label}>Avatar yuklang</label>
               <input
-                name="inp"
+                id="inp"
                 type={'file'}
                 accept="image/*"
                 defaultValue={''}
                 size="60"
+                style={{
+                  display:'none'
+                }}
               />
             </div>
           </div>
           <Routes>
             <Route
-              path="/"
+              path="/*"
               element={
                 <Player
                   label1={'Имя'}
@@ -40,7 +45,7 @@ const Registration = () => {
               }
             />
             <Route
-              path="*/team"
+              path="team"
               element={
                 <Player
                   label1={'Названия'}

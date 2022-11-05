@@ -54,6 +54,7 @@ export default function OpenIconSpeedDial() {
         >
           {actions.map((action) => (
               <SpeedDialAction
+              key={action.name}
                 icon={action.icon}
                 tooltipTitle={action.name}
                 onClick={handleClose}

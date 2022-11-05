@@ -36,10 +36,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:13.5.0"],\
             ["antd", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:4.24.1"],\
             ["react", "npm:18.2.0"],\
-            ["react-app", "npm:1.1.2"],\
+            ["react-countup", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:6.3.2"],\
             ["react-dom", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:18.2.0"],\
             ["react-router-dom", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:6.4.3"],\
             ["react-scripts", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:5.0.1"],\
+            ["react-visibility-sensor", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:5.1.1"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -7240,6 +7241,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["countup.js", [\
+        ["npm:2.3.2", {\
+          "packageLocation": "./.yarn/cache/countup.js-npm-2.3.2-fce559ea32-77bb509cd1.zip/node_modules/countup.js/",\
+          "packageDependencies": [\
+            ["countup.js", "npm:2.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["cross-spawn", [\
         ["npm:7.0.3", {\
           "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.3-e4ff3e65b3-671cc7c728.zip/node_modules/cross-spawn/",\
@@ -7696,10 +7706,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:13.5.0"],\
             ["antd", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:4.24.1"],\
             ["react", "npm:18.2.0"],\
-            ["react-app", "npm:1.1.2"],\
+            ["react-countup", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:6.3.2"],\
             ["react-dom", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:18.2.0"],\
             ["react-router-dom", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:6.4.3"],\
             ["react-scripts", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:5.0.1"],\
+            ["react-visibility-sensor", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:5.1.1"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -16169,15 +16180,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["react-app", [\
-        ["npm:1.1.2", {\
-          "packageLocation": "./.yarn/cache/react-app-npm-1.1.2-8344c11d83-3810657097.zip/node_modules/react-app/",\
-          "packageDependencies": [\
-            ["react-app", "npm:1.1.2"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["react-app-polyfill", [\
         ["npm:3.0.0", {\
           "packageLocation": "./.yarn/cache/react-app-polyfill-npm-3.0.0-e607e071bd-1bb031080a.zip/node_modules/react-app-polyfill/",\
@@ -16189,6 +16191,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["raf", "npm:3.4.1"],\
             ["regenerator-runtime", "npm:0.13.10"],\
             ["whatwg-fetch", "npm:3.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-countup", [\
+        ["npm:6.3.2", {\
+          "packageLocation": "./.yarn/cache/react-countup-npm-6.3.2-9ebdcc1e23-fd1732752e.zip/node_modules/react-countup/",\
+          "packageDependencies": [\
+            ["react-countup", "npm:6.3.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:6.3.2", {\
+          "packageLocation": "./.yarn/__virtual__/react-countup-virtual-b7a2d8c6c7/0/cache/react-countup-npm-6.3.2-9ebdcc1e23-fd1732752e.zip/node_modules/react-countup/",\
+          "packageDependencies": [\
+            ["react-countup", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:6.3.2"],\
+            ["@types/react", null],\
+            ["countup.js", "npm:2.3.2"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -16452,6 +16477,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", null],\
             ["dom-helpers", "npm:5.2.1"],\
             ["loose-envify", "npm:1.4.0"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-visibility-sensor", [\
+        ["npm:5.1.1", {\
+          "packageLocation": "./.yarn/cache/react-visibility-sensor-npm-5.1.1-7aa966cf7a-ebce7bc743.zip/node_modules/react-visibility-sensor/",\
+          "packageDependencies": [\
+            ["react-visibility-sensor", "npm:5.1.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:5.1.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-visibility-sensor-virtual-bd8d919ac9/0/cache/react-visibility-sensor-npm-5.1.1-7aa966cf7a-ebce7bc743.zip/node_modules/react-visibility-sensor/",\
+          "packageDependencies": [\
+            ["react-visibility-sensor", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:5.1.1"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:91ef3a8986ab04af61008979f021cf2aa32a35d8699c66b7ba5777ea0db2cb1f27b1d00e73f87212ce18864f6a7706ea2793a8268e8787e8abf26fe67a5084ea#npm:18.2.0"]\

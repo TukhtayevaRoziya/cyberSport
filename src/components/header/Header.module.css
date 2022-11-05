@@ -88,7 +88,7 @@
     height: 80vh;
   }
   .title svg {
-    transform: scale(1.5);
+    transform: scale(1.1);
     margin-top: calc(102px - 100px);
   }
 }

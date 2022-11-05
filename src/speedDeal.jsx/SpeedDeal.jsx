@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import SpeedDial from '@material-ui/lab/SpeedDial';
 import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
 import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
@@ -10,10 +9,12 @@ import PrintIcon from '@material-ui/icons/Print';
 import ShareIcon from '@material-ui/icons/Share';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import EditIcon from '@material-ui/icons/Edit';
+import CallIcon from '@material-ui/icons/Call';
+import styles from './SpeedDeal.module.css'
+import { Facebook, Instagram, Telegram, YouTube } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: 380,
     transform: 'translateZ(0px)',
     flexGrow: 1,
   },
@@ -25,22 +26,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const actions = [
-  { icon: <FileCopyIcon />, name: 'Copy' },
-  { icon: <SaveIcon />, name: 'Save' },
-  { icon: <PrintIcon />, name: 'Print' },
-  { icon: <ShareIcon />, name: 'Share' },
-  { icon: <FavoriteIcon />, name: 'Like' },
+  { icon: <Telegram />, name: 'Telegram' },
+  { icon: <YouTube />, name: 'YouTube' },
+  { icon: <Instagram />, name: 'Instagram' },
+  { icon: <Facebook />, name: 'Facebook' },
 ];
 
 export default function OpenIconSpeedDial() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [hidden, setHidden] = React.useState(false);
-
-  const handleVisibility = () => {
-    setHidden((prevHidden) => !prevHidden);
-  };
-
   const handleOpen = () => {
     setOpen(true);
   };
@@ -50,13 +45,13 @@ export default function OpenIconSpeedDial() {
   };
 
   return (
-    <div className={classes.root}>
-      <Button onClick={handleVisibility}>Toggle Speed Dial</Button>
-      <SpeedDial
+    <div className={classes.root + ' ' + styles.wrap}>
+      <div class={styles.call_animation}>
+        <SpeedDial0
         ariaLabel="SpeedDial openIcon example"
         className={classes.speedDial}
         hidden={hidden}
-        icon={<SpeedDialIcon openIcon={<EditIcon />} />}
+        icon={<CallIcon className={styles.trin_trin}/>}
         onClose={handleClose}
         onOpen={handleOpen}
         open={open}
@@ -69,7 +64,9 @@ export default function OpenIconSpeedDial() {
             onClick={handleClose}
           />
         ))}
-      </SpeedDial>
+      </SpeedDial0>
+      </div>
+      
     </div>
   );
 }

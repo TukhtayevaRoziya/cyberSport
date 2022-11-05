@@ -161,6 +161,7 @@ span.MuiTouchRipple-root {
   height: 3px;
 
 }
+
 .Mui-selected span:hover:after {
   width: 100%;
 

@@ -11,13 +11,15 @@ import OpenIconSpeedDial from './speedDeal.jsx/SpeedDeal'
 function App() {
   return (
     <div>
+        
       <Header />
       <About />
+      <OpenIconSpeedDial/>
       <TurnirHeader />
       <Photo />
       <Registration />
       <Footer />
-      <OpenIconSpeedDial/>
+      
     </div>
   )
 }

@@ -47,7 +47,7 @@ export default function OpenIconSpeedDial() {
   return (
     <div className={classes.root + ' ' + styles.wrap}>
       <div class={styles.call_animation}>
-        <SpeedDial0
+        <SpeedDial
           ariaLabel="SpeedDial openIcon example"
           className={classes.speedDial}
           hidden={hidden}
@@ -67,7 +67,7 @@ export default function OpenIconSpeedDial() {
             </a>
 
           ))}
-        </SpeedDial0>
+        </SpeedDial>
       </div>
 
     </div>

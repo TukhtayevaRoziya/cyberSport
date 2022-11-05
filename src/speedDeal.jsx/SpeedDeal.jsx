@@ -47,7 +47,7 @@ export default function OpenIconSpeedDial() {
             ariaLabel="SpeedDial openIcon example"
             className={classes.speedDial}
             hidden={hidden}
-            icon={<CallIcon/>}
+            icon={<CallIcon className={styles.trin_trin}/>}
             onClose={handleClose}
             onOpen={handleOpen}
             open={open}

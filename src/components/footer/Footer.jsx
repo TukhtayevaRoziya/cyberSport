@@ -26,7 +26,7 @@ const Footer = () => {
         <NavLink className={"footerLink"} to="DOTA_2">DOTA 2</NavLink>
         <NavLink className={"footerLink"} to="CS_GO">CS GO</NavLink>
         <NavLink className={"footerLink"} to="R6_SEGA">R6 SEGA</NavLink>
-        <NavLink className={"footerLink"} to="pubg">pubg</NavLink>
+        <NavLink className={"footerLink"} to="pubg">PUBG</NavLink>
       </div>
       <div className={styles.Footer_block4}>
         <h1>Sign up to our newsletter!</h1>

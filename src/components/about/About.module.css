@@ -1,7 +1,7 @@
 .wrap {
   height: auto;
   width: 100%;
-  background-image: url(../../assets/images/about_bg.png);
+  background-image: url(../../assets/images/about_bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 100px;
@@ -96,7 +96,7 @@
   border-bottom-right-radius: 110px;
   border: 2px solid #00e0ff;
   border-top: 0;
-  background-image: url(../../assets/images/about_bg.png);
+  background-image: url(../../assets/images/about_bg.webp);
   background-size: 100vh 100vh;
   background-repeat: no-repeat;
 }

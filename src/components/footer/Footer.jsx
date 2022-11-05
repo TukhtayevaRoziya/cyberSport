@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.css'
-import img from "../../assets/images/footer1.png"
+import img from "../../assets/images/footer1.webp"
 import { Facebook, Instagram, Telegram, YouTube } from '@material-ui/icons'
 
 const Footer = () => {

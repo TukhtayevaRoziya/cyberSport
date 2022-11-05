@@ -11,7 +11,7 @@ const TurnirHeader = () => {
       <div className={style.Routes}>
         <h1>Последние турниры</h1>
         <div className={style.Route_Link}>
-          <NavLink className={'Turnis_Link'} to="/">
+          <NavLink className={'Turnis_Link'} to="/*">
             Все
           </NavLink>
           <NavLink className={'Turnis_Link'} to="/CS_GO">

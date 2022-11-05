@@ -1,9 +1,9 @@
 import React from 'react'
 import Register from './register/Register'
 
-import i1 from '../../assets/images/about_box1.png'
-import i2 from '../../assets/images/about_box2.png'
-import i3 from '../../assets/images/about_box3.png'
+import i1 from '../../assets/images/about_box1.webp'
+import i2 from '../../assets/images/about_box2.webp'
+import i3 from '../../assets/images/about_box3.webp'
 
 import styles from './About.module.css'
 

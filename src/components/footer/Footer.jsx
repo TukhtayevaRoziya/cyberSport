@@ -20,10 +20,18 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.Footer_block2}>
-        <NavLink className={"footerLink"} to="/#about">О нас</NavLink>
-        <NavLink className={"footerLink"} to="/#tournament">Турниры</NavLink>
-        <NavLink className={"footerLink"} to="/#abacus">Счёты</NavLink>
-        <NavLink className={"footerLink"} to="/#photo">Фото</NavLink>
+        <a className={"footerLink"} href="#about">
+        О нас
+        </a>
+        <a className={"footerLink"} href="#tournament">
+        Турниры
+        </a>
+        <a className={"footerLink"} href="#abacus">
+        Счёты
+        </a>
+        <a className={"footerLink"} href="#photo">
+        Фото
+        </a>
       </div>
       <div className={styles.Footer_block3}>
         <NavLink className={"footerLink"} to="DOTA_2">DOTA 2</NavLink>

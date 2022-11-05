@@ -45,11 +45,35 @@ span.MuiTouchRipple-root {
   line-height: 27px;
   color: #ffffff;
   flex: none;
-  order: 1;
-  flex-grow: 0;
   text-decoration: none;
 }
+ .Turnis_Link{
+  position: relative;
+  padding: 0 0 5px 0;
+}
+.Turnis_Link:hover{
+  color: white;
+}
+ .Turnis_Link:after {
+  position: absolute;
+  bottom: 0;
+  transition: all .2s;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: linear-gradient(92.49deg, #AD00FF 14.3%, #00E0FF 100%) !important;
 
+  height: 3px;
+ 
+}
+.Turnis_Link:hover:after {
+  width: 100%;
+
+  font-weight: 600;
+}
 .footerLink {
   width: 100%;
   font-family: 'Montserrat';

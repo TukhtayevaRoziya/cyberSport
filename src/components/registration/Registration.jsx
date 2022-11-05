@@ -12,7 +12,7 @@ const Registration = () => {
         <div className={styles.main}>
           <h1>Регистрация</h1>
           <div className={styles.choose}>
-            <NavLink to={'/*'}>Один игрок</NavLink>
+            <NavLink to={'/'}>Один игрок</NavLink>
             <NavLink to={'/team'}>Команда</NavLink>
           </div>
           <div className={styles.upload_img}>
@@ -34,7 +34,7 @@ const Registration = () => {
           </div>
           <Routes>
             <Route
-              path="/*"
+              path="/"
               element={
                 <Player
                   label1={'Имя'}

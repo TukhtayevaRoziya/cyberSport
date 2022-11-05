@@ -83,7 +83,7 @@ export default class Navbar extends Component {
         }
       >
         <div className={styles.img_wrap}>
-          <img src={icon} alt="rasm bor edi!!" draggable={false} />
+          <img src={icon} alt="" draggable={false} />
         </div>
 
         <div className={styles.main_wrap}>

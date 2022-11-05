@@ -42,9 +42,9 @@ const Footer = () => {
       <div className={styles.Footer_block4}>
         <h1>Sign up to our newsletter!</h1>
         <p>Do you wont to receive the latest updates  and spesial offers ? Enter you email below to receive our weekly newsletter</p>
-        <input type="text" placeholder='Enter your Email' className={styles.Input} />
+        <input type="text" placeholder='Enter your Email' className={styles.Input} id='footer'/>
         <div className={styles.Block_Check}>
-          <input type="checkbox" /> <label htmlFor="">I accept newsletter terms</label>
+          <input type="checkbox" id='footer_checkbox'/> <label htmlFor="">I accept newsletter terms</label>
         </div>
       </div>
       <h2 className={styles.End}>Copyright by Digital City 2022</h2>

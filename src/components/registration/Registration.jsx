@@ -7,7 +7,7 @@ import styles from './Registration.module.css'
 
 const Registration = () => {
   return (
-    <div className={styles.wrap} id='registration'>
+    <div className={styles.wrap} id="registration">
       <div className={styles.block}>
         <div className={styles.main}>
           <h1>Регистрация</h1>
@@ -18,12 +18,17 @@ const Registration = () => {
           <div className={styles.upload_img}>
             <img draggable={false} src={avatar} alt="" />
             <div className={styles.upload_img__main}>
+              <h5 className={styles.upload_img_text}>Fayl yuklang...</h5>
+              <label for='inp' className={styles.label}>Avatar yuklang</label>
               <input
-                name="inp"
+                id="inp"
                 type={'file'}
                 accept="image/*"
                 defaultValue={''}
                 size="60"
+                style={{
+                  display:'none'
+                }}
               />
             </div>
           </div>

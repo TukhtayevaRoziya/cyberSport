@@ -110,10 +110,19 @@
     opacity: 0.6;
     margin-bottom: 2rem;
 }
-
+.Input::placeholder{
+    color: white;
+    font-weight: 600;
+}
 .Input {
-    width: 50% !important;
-    height: 30px;
+    width: 60% !important;
+    height: 40px;
+    padding: 0 1rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: 2px solid grey;
+    background-color: transparent !important;
 }
 
 .Block_Check {

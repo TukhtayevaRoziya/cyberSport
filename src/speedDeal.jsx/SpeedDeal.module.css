@@ -1,6 +1,6 @@
 .wrap{
     top: 0;
-    bottom: 0;
+    bottom: 0rem;
     right: 0;
     position: fixed;
 }
@@ -32,4 +32,12 @@
         transform:rotate3d(0, 0, 1, 0deg);
     }
 
+}
+@media(min-width:0) and (max-width:600.9px){
+    .wrap{
+        top: 0;
+        bottom: 5rem;
+        right: 0;
+        position: fixed;
+    }
 }

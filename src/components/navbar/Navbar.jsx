@@ -66,6 +66,7 @@ export default class Navbar extends Component {
         value={d.value}
         component={NavLink}
         to={pathMap[d.id]}
+        
       />
     ))
 

@@ -16,6 +16,15 @@
     flex-wrap: wrap;
 }
 
+.Footer_block2 a, .Footer_block3 a {
+    transition: all 0.4s !important;
+
+}
+
+.Footer_block2 a:hover, .Footer_block3 a:hover {
+    margin-left: 4px;
+}
+
 .Footer_block3 {
     display: flex;
     flex-wrap: wrap;
@@ -296,16 +305,19 @@
         width: 100%;
         text-align: center;
     }
+
     .Block_Check {
         width: 100%;
         display: flex;
         justify-content: center;
     }
+
     .Footer_block1 img {
         width: auto;
         margin-bottom: 29px;
     }
 }
+
 @media(min-width:801px) and (max-width:1100.9px) {
     .Footer {
         display: flex;
@@ -313,5 +325,5 @@
         justify-content: space-between;
         background: #131313;
         padding: 66px 25px 15px 25px;
-    }  
+    }
 }

@@ -14,10 +14,10 @@ span.MuiTouchRipple-root {
   display: none;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Montserrat';
   src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
-} */
+}
 
 @font-face {
   font-family: 'Russo One';
@@ -51,9 +51,11 @@ span.MuiTouchRipple-root {
   position: relative;
   padding: 0 0 5px 0;
 }
+
 .Turnis_Link:hover {
   color: white;
 }
+
 .Turnis_Link:after {
   position: absolute;
   bottom: 0;
@@ -68,11 +70,13 @@ span.MuiTouchRipple-root {
 
   height: 3px;
 }
+
 .Turnis_Link:hover:after {
   width: 100%;
 
   font-weight: 600;
 }
+
 .footerLink {
   width: 100%;
   font-family: 'Montserrat';
@@ -150,15 +154,12 @@ input[type='file']::before {
 .about__Link {
   --border-size: 3px;
   --border-angle: 0turn;
-  background-image: conic-gradient(
-      from var(--border-angle),
+  background-image: conic-gradient(from var(--border-angle),
       #213,
       #112 50%,
-      #213
-    ),
-    conic-gradient(from var(--border-angle), transparent 20%, #ad00ff, #00e0ff);
-  background-size: calc(100% - (var(--border-size) * 2))
-      calc(100% - (var(--border-size) * 2)),
+      #213),
+    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)),
     cover;
 
   background-position: center center;
@@ -166,16 +167,19 @@ input[type='file']::before {
   -webkit-animation: bg-spin 3s linear infinite;
   animation: bg-spin 3s linear infinite;
 }
+
 @-webkit-keyframes bg-spin {
   to {
     --border-angle: 1turn;
   }
 }
+
 @keyframes bg-spin {
   to {
     --border-angle: 1turn;
   }
 }
+
 .about__Link:hover {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
@@ -194,10 +198,32 @@ input[type='file']::before {
   max-height: 500px !important;
   object-fit: cover;
 }
+.Mui-selected spmn{
+  color: red !important;
+}
+.Mui-selected span:after {
+  position: absolute;
+  bottom: 0;
+  transition: all .2s;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: linear-gradient(92.49deg, #AD00FF 14.3%, #00E0FF 100%) !important;
 
+  height: 3px;
+
+}
+
+.Mui-selected span:hover:after {
+  width: 100%;
+
+  font-weight: 600;
+}
 @media (min-width: 0) and (max-width: 600.9px) {
-  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
-    svg.MuiSvgIcon-root {
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active svg.MuiSvgIcon-root {
     border: 2px solid #8f00ff;
   }
 
@@ -211,9 +237,7 @@ input[type='file']::before {
     width: 50px;
   }
 
-  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active
-    svg.MuiSvgIcon-root
-    path {
+  a.MuiButtonBase-root.MuiBottomNavigationAction-root.Mui-selected.active svg.MuiSvgIcon-root path {
     color: #8f00ff;
   }
 
@@ -231,6 +255,7 @@ input[type='file']::before {
   .Photo_main__\+PoMr .ant-image:nth-last-child(2) {
     display: none !important;
   }
+
   .ant-image-preview-img {
     min-width: auto;
     min-height: auto;
@@ -244,6 +269,7 @@ input[type='file']::before {
     line-height: 30px;
     text-decoration: none;
   }
+
   .Photo_main__\+PoMr .ant-image:last-child,
   .Photo_main__\+PoMr .ant-image:nth-last-child(5) {
     display: none;

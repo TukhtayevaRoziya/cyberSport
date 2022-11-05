@@ -7,16 +7,20 @@ import Registration from './components/registration/Registration'
 
 import 'antd/dist/antd.css';
 import './App.css'
+import OpenIconSpeedDial from './speedDeal.jsx/SpeedDeal'
 
 function App() {
   return (
     <div>
+        
       <Header />
       <About />
+      <OpenIconSpeedDial/>
       <TurnirHeader />
       <Photo />
       <Registration />
       <Footer />
+      
     </div>
   )
 }

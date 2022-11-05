@@ -3,7 +3,7 @@ import style from "./CopyComponent.module.css"
 const CopyComponent = (props) => {
  
   const map2 = props.map.map(a =>
-    <>
+    <React.Fragment key={a.id}>
       <div className={style.Component_1}>
         <img src={a.img_1} alt="rasm bor edi!" />
         <h1>VS</h1>
@@ -18,7 +18,7 @@ const CopyComponent = (props) => {
         </div>
         <p>{a.data}</p>
       </div>
-    </>
+    </React.Fragment>
   )
   return (
     <div className={style.CopyComponent}>

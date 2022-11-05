@@ -34,10 +34,10 @@ const Footer = () => {
         </a>
       </div>
       <div className={styles.Footer_block3}>
-        <NavLink className={"footerLink"} to="DOTA_2">DOTA 2</NavLink>
-        <NavLink className={"footerLink"} to="CS_GO">CS GO</NavLink>
-        <NavLink className={"footerLink"} to="R6_SEGA">R6 SEGA</NavLink>
-        <NavLink className={"footerLink"} to="pubg">PUBG</NavLink>
+        <a className={"footerLink"} href="#tournament">DOTA 2</a>
+        <a className={"footerLink"} href="#tournament">CS GO</a>
+        <a className={"footerLink"} href="#tournament">R6 SEGA</a>
+        <a className={"footerLink"} href="#tournament">PUBG</a>
       </div>
       <div className={styles.Footer_block4}>
         <h1>Sign up to our newsletter!</h1>

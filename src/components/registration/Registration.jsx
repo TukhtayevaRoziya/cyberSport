@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Route, Routes } from 'react-router-dom'
 
 import avatar from '../../assets/images/register_player.png'
 
@@ -18,16 +18,39 @@ const Registration = () => {
           <div className={styles.upload_img}>
             <img draggable={false} src={avatar} alt="" />
             <div className={styles.upload_img__main}>
-              <input name="inp" type={'file'} accept="image/*" defaultValue={''} size="60" />
+              <input
+                name="inp"
+                type={'file'}
+                accept="image/*"
+                defaultValue={''}
+                size="60"
+              />
             </div>
           </div>
-          <Player
-            label1={'Имя'}
-            label2={'Фамилия'}
-            label3={'Направления'}
-            label4={'Почта'}
-            label5={'Телефон'}
-          />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Player
+                  label1={'Имя'}
+                  label2={'Фамилия'}
+                  label3={'Почта'}
+                  label4={'Телефон'}
+                />
+              }
+            />
+            <Route
+              path="/team"
+              element={
+                <Player
+                  label1={'Названия'}
+                  label2={'Число игроков'}
+                  label3={'Почта Лидера'}
+                  label4={'Телефон Лидера'}
+                />
+              }
+            />
+          </Routes>
         </div>
       </div>
     </div>
@@ -36,8 +59,7 @@ const Registration = () => {
 
 export default Registration
 
-const Player = ({ label1, label2, label3, label4, label5 }) => {
-
+const Player = ({ label1, label2, label3, label4 }) => {
   const [value, setValue] = useState('+998')
 
   return (
@@ -59,17 +81,17 @@ const Player = ({ label1, label2, label3, label4, label5 }) => {
           <input type={'text'} name={'label1'} />
         </div>
         <div className={styles.inp_box} id={styles.label1}>
-          <label name={'label1'}>{label3}</label>
+          <label name={'label1'}>Направления</label>
           <input type={'text'} name={'label1'} />
         </div>
       </div>
       <div className={styles.inp_block}>
         <div className={styles.inp_box} id={styles.label1}>
-          <label name={'label1'}>{label4}</label>
+          <label name={'label1'}>{label3}</label>
           <input type={'text'} name={'label1'} />
         </div>
         <div className={styles.inp_box} id={styles.label1}>
-          <label name={'label1'}>{label5}</label>
+          <label name={'label1'}>{label4}</label>
           <input
             type={'tel'}
             name={'label1'}
@@ -81,7 +103,7 @@ const Player = ({ label1, label2, label3, label4, label5 }) => {
           />
         </div>
       </div>
-      <input type={'submit'} value='Отправить' className={styles.btn}/>
+      <input type={'submit'} value="Отправить" className={styles.btn} />
     </div>
   )
 }

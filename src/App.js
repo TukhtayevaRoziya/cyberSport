@@ -6,6 +6,7 @@ import TurnirHeader from './components/turnir/TurnirHeader'
 import Registration from './components/registration/Registration'
 
 import './App.css'
+import OpenIconSpeedDial from './speedDeal.jsx/SpeedDeal'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Photo />
       <Registration />
       <Footer />
+      <OpenIconSpeedDial/>
     </div>
   )
 }

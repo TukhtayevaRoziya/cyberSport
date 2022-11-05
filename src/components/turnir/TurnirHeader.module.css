@@ -20,7 +20,9 @@
     line-height: 34px;
     color: #FFFFFF;
 }
-
+.ButtonDiv{
+    text-align: right;
+}
 @media(min-width:0) and (max-width:880.9px) {
     .Routes h1 {
         width: 100%;
@@ -29,7 +31,9 @@
         margin-bottom: 0.5rem;
 
     }
-
+    .ButtonDiv{
+        text-align: center;
+    }
     .TurnirHeader {
         padding: 20px 15px;
         background-image: url("../../assets/images/playes_1.png");
@@ -37,7 +41,7 @@
     }
 
     .Route_Link {
-        overflow-x: auto;
+        overflow-x: auto !important;
         display: flex;
         justify-content: center;
         width: 100%;

@@ -19,6 +19,10 @@ const TurnirHeader = () => {
                 </div>
             </div>
             <TurnirRoute />
+            <div className={style.ButtonDiv}>
+
+                <button className="about__Link" >Записаться</button>
+            </div>
         </div>
     )
 }

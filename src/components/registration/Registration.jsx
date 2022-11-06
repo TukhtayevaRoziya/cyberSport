@@ -18,7 +18,7 @@ const Registration = () => {
           <div className={styles.upload_img}>
             <img draggable={false} src={avatar} alt="" />
             <div className={styles.upload_img__main}>
-              <h2 className={styles.upload_img_text}>Fayl yuklang...</h2>
+              <h5 className={styles.upload_img_text}>Fayl yuklang...</h5>
               <label for='inp' className={styles.label}>Avatar yuklang</label>
               <input
                 id="inp"

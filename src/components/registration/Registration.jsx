@@ -18,8 +18,8 @@ const Registration = () => {
           <div className={styles.upload_img}>
             <img draggable={false} src={avatar} alt="" />
             <div className={styles.upload_img__main}>
-              <h5 className={styles.upload_img_text}>Fayl yuklang...</h5>
-              <label for='inp' className={styles.label}>Avatar yuklang</label>
+              <h5 className={styles.upload_img_text}>Загрузить файл...</h5>
+              <label for='inp' className={styles.label}>Загрузить аватар</label>
               <input
                 id="inp"
                 type={'file'}
